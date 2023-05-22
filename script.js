@@ -26,14 +26,4 @@ function letterCombinations(input_digit) {
       return;
     }
 
-    const currentDigit = remainingDigits[0];
-    const letters = digitToLetters[currentDigit];
-
-    for (let i = 0; i < letters.length; i++) {
-      const currentLetter = letters[i];
-      backtrack(currentCombination + currentLetter, remainingDigits.slice(1));
-    }
-  }
-}
-
 module.exports = letterCombinations;

@@ -14,16 +14,16 @@ function letterCombinations(input_digit) {
     '9': 'wxyz'
   };
 
-  const combinations = [];
+  const digits = input_digit.split('');
 
-  backtrack('', digits);
+	if( digits == digitToLetters){
+	   return digits * digitToLetters	;
+	}
 
-  return combinations;
 
-  function backtrack(currentCombination, remainingDigits) {
-    if (remainingDigits.length === 0) {
-      combinations.push(currentCombination);
-      return;
-    }
+
+
+
+	
 
 module.exports = letterCombinations;
